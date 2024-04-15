@@ -116,5 +116,7 @@ bst_t *array_to_bst(int *array, size_t size);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 void binary_tree_print(const binary_tree_t *);
 
+bst_t *bst_search(const bst_t *tree, int value);
+
 #endif /* BINARY_TREES_H */
 
