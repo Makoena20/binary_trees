@@ -104,5 +104,6 @@ int binary_tree_is_bst(const binary_tree_t *tree);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 void binary_tree_print(const binary_tree_t *);
 
+
 #endif /* BINARY_TREES_H */
 
