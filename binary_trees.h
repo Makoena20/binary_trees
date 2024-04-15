@@ -98,5 +98,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 /* Function to delete a binary tree */
 void binary_tree_delete(binary_tree_t *tree);
 
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+
 #endif /* BINARY_TREES_H */
 
