@@ -112,6 +112,9 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 bst_t *bst_insert(bst_t **tree, int value);
 void binary_tree_print(const binary_tree_t *);
 
+bst_t *array_to_bst(int *array, size_t size);
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+void binary_tree_print(const binary_tree_t *);
 
 #endif /* BINARY_TREES_H */
 
