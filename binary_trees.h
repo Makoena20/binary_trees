@@ -87,7 +87,16 @@ size_t binary_tree_size(const binary_tree_t *tree);
 
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 
-bool binary_tree_is_complete(const binary_tree_t *tree);
+int binary_tree_is_complete(const binary_tree_t *tree);
+
+/* Function to print binary tree */
+void binary_tree_print(const binary_tree_t *);
+
+/* Function to create a new node */
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+
+/* Function to delete a binary tree */
+void binary_tree_delete(binary_tree_t *tree);
 
 #endif /* BINARY_TREES_H */
 
