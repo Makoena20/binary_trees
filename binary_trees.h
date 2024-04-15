@@ -87,16 +87,6 @@ size_t binary_tree_size(const binary_tree_t *tree);
 
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 
-binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
-binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
-
-int binary_tree_is_bst(const binary_tree_t *tree);
-
-int heap_extract(heap_t **root);
-heap_t *binary_tree_node(heap_t *parent, int value);
-size_t binary_tree_size(const heap_t *tree);
-void binary_tree_print(const heap_t *tree);
-int *heap_to_sorted_array(heap_t *heap, size_t *size)
 
 #endif /* BINARY_TREES_H */
 
