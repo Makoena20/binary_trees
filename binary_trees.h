@@ -118,6 +118,7 @@ void binary_tree_print(const binary_tree_t *);
 
 bst_t *bst_search(const bst_t *tree, int value);
 
+bst_t *bst_remove(bst_t *root, int value);
 
 #endif /* BINARY_TREES_H */
 
