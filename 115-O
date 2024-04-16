@@ -1,0 +1,6 @@
+# Binary Search Tree operations time complexities
+
+# Inserting the value n: O(log n) on average
+# Removing the node with the value n: O(log n) on average
+# Searching for a node in a BST of size n: O(log n) on average
+
