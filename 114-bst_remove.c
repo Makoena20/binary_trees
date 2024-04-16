@@ -4,8 +4,7 @@
  * bst_remove - Removes a node from a Binary Search Tree
  * @root: Pointer to the root node of the tree
  * @value: Value to remove from the tree
- *
- * Return: Pointer to the new root node of the tree after removing the value
+ * Return: Pointer to the new root node of the tree after removal
  */
 bst_t *bst_remove(bst_t *root, int value)
 {
@@ -21,17 +20,21 @@ bst_t *bst_remove(bst_t *root, int value)
             bst_t *temp = root->right;
             free(root);
             return temp;
-        } else if (root->right == NULL) {
+        }
+        else if (root->right == NULL) {
             bst_t *temp = root->left;
             free(root);
             return temp;
         }
+
         bst_t *temp = root->right;
         while (temp && temp->left)
             temp = temp->left;
+
         root->n = temp->n;
         root->right = bst_remove(root->right, temp->n);
     }
+
     return root;
 }
 
