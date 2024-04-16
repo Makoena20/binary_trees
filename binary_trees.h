@@ -123,14 +123,9 @@ bst_t *bst_remove(bst_t *root, int value);
 int binary_tree_is_avl(const binary_tree_t *tree);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value); 
 
+int heap_extract(heap_t **root);
+heap_t *array_to_heap(int *array, size_t size);
 void binary_tree_print(const binary_tree_t *);
-binary_tree_t *binary_tree_node(binary_tree_t *, int);
-heap_t *array_to_heap(int *, size_t);
-int heap_insert(heap_t **, int);
-void binary_tree_delete(binary_tree_t *);
-size_t binary_tree_size(const binary_tree_t *);
-void heapify_down(heap_t *);
-int heap_extract(heap_t **);
 
 #endif /* BINARY_TREES_H */
 
