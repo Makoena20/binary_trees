@@ -136,10 +136,7 @@ size_t binary_tree_size(const heap_t *tree);
 void binary_tree_print(const heap_t *tree);
 void binary_tree_delete(heap_t *tree);
 
-binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
-typedef struct binary_tree_s binary_tree_t;
-void binary_tree_print(const binary_tree_t *);
-avl_t *avl_insert(avl_t **tree, int value);
+binary_tree_t *avl_insert(binary_tree_t **tree, int value);
 
 #endif /* BINARY_TREES_H */
 
