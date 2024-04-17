@@ -138,5 +138,12 @@ void binary_tree_delete(heap_t *tree);
 
 binary_tree_t *avl_insert(binary_tree_t **tree, int value);
 
+heap_t *array_to_heap(int *array, size_t size);
+void heapify(heap_t *node);
+heap_t *heap_insert(heap_t **root, int value);
+int heap_extract(heap_t **root);
+void binary_tree_print(const binary_tree_t *tree);
+void binary_tree_delete(binary_tree_t *tree);
+
 #endif /* BINARY_TREES_H */
 
