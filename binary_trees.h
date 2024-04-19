@@ -145,11 +145,5 @@ int heap_extract(heap_t **root);
 void binary_tree_print(const binary_tree_t *tree);
 void binary_tree_delete(binary_tree_t *tree);
 
-/* Binary Search Tree Node structure */
-typedef struct binary_tree_s bst_t;
-
-/* Function Prototypes */
-bst_t *bst_remove(bst_t *root, int value);
-
 #endif /* BINARY_TREES_H */
 
