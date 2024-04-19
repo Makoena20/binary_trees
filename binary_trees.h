@@ -145,5 +145,19 @@ int heap_extract(heap_t **root);
 void binary_tree_print(const binary_tree_t *tree);
 void binary_tree_delete(binary_tree_t *tree);
 
+/* AVL Tree Structure */
+typedef struct binary_tree_s avl_t;
+
+/* Function Prototypes */
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+void binary_tree_print(const binary_tree_t *);
+
+/* AVL Tree Specific Functions */
+avl_t *array_to_avl(int *array, size_t size);
+avl_t *avl_insert(avl_t **tree, int value);
+int binary_tree_balance(const binary_tree_t *tree);
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+
 #endif /* BINARY_TREES_H */
 
